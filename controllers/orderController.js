@@ -5,7 +5,7 @@ export const getAllOrdersCtrl = asyncHandler(async (req, res) => {
   const orders = await Order.find({}).sort({ createdAt: -1 });
   res.json({
     status: "success",
-    message: "Orders fetched succefully",
+    message: "Orders fetched succefully in server",
     orders,
   });
 });
